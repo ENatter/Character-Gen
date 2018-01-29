@@ -8,22 +8,46 @@
     mc:Ignorable="d">
 
     <Grid Background="#FFB0B0B0">
-        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="86,75,0,0" Text="" VerticalAlignment="Top" Width="174" Height="30"  TextChanged="textbox1_TextChanged" Background="White" PlaceholderText="Enter Name" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Margin="115,49,0,0" Text="Character Name" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="23,143,0,0" Text="str" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox x:Name="Str_in" HorizontalAlignment="Left" Margin="53,138,0,0" Text="" VerticalAlignment="Top" Width="62" Height="30" MaxLength="2" TextChanged="Str_in_TextChanged" Background="White" PlaceholderText="str" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Margin="23,180,0,0" Text="dex" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
-        <TextBox x:Name="Dex_in" HorizontalAlignment="Left" Margin="53,175,0,0" Text="" VerticalAlignment="Top" Width="51" Height="30" MaxLength="2" TextChanged="Dex_in_TextChanged" Background="White" PlaceholderText="dex" TextAlignment="Center"/>
-        <TextBlock x:Name="Str_mod" HorizontalAlignment="Left" Margin="123,143,0,0" Text="+0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="Str_mod_SelectionChanged"/>
-        <Button x:Name="Generate_button" Content="Generate" HorizontalAlignment="Left" Margin="184,292,0,0" VerticalAlignment="Top" Background="#33FF0000" BorderThickness="1,1,1,1" IsRightTapEnabled="False">
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="10,43,0,0" Text="" VerticalAlignment="Top" Width="174" Height="30"  TextChanged="textbox1_TextChanged" Background="White" PlaceholderText="Enter Name" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="39,17,0,0" Text="Character Name" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,111,0,0" Text="str" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="Str_in" HorizontalAlignment="Left" Margin="53,106,0,0" Text="" VerticalAlignment="Top" Width="62" Height="30" MaxLength="2" TextChanged="Str_in_TextChanged" Background="White" PlaceholderText="str" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,148,0,0" Text="dex" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox x:Name="Dex_in" HorizontalAlignment="Left" Margin="53,146,0,0" Text="" VerticalAlignment="Top" Width="51" Height="30" MaxLength="2" TextChanged="Dex_in_TextChanged" Background="White" PlaceholderText="dex" TextAlignment="Center"/>
+        <TextBlock x:Name="Str_mod" HorizontalAlignment="Left" Margin="123,111,0,0" Text="+0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="Str_mod_SelectionChanged"/>
+        <TextBlock x:Name="Dex_mod" HorizontalAlignment="Left" Margin="123,150,0,0" Text="+0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="Dex_mod_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,86,0,0" Text="Raw Ability Scores" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,188,0,0" Text="con" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox x:Name="Con_in" HorizontalAlignment="Left" Margin="53,186,0,0" Text="" VerticalAlignment="Top" Width="51" Height="30" MaxLength="2" TextChanged="Con_in_TextChanged" Background="White" PlaceholderText="con" TextAlignment="Center"/>
+        <TextBlock x:Name="Con_mod" HorizontalAlignment="Left" Margin="123,190,0,0" Text="+0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="Con_mod_SelectionChanged"/>
+        <TextBox x:Name="Int_in" HorizontalAlignment="Left" Margin="53,226,0,0" Text="" VerticalAlignment="Top" Width="51" Height="30" MaxLength="2" TextChanged="int_in_TextChanged" Background="White" PlaceholderText="int" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,232,0,0" Text="int" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_2"/>
+        <TextBlock x:Name="Int_mod" HorizontalAlignment="Left" Margin="123,232,0,0" Text="+0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="Con_mod_SelectionChanged"/>
+        <TextBox x:Name="Wis_in" HorizontalAlignment="Left" Margin="53,266,0,0" Text="" VerticalAlignment="Top" Width="51" Height="30" MaxLength="2" TextChanged="int_in_TextChanged" Background="White" PlaceholderText="wis" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,272,0,0" Text="wis" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_2"/>
+        <TextBlock x:Name="Wis_mod" HorizontalAlignment="Left" Margin="123,272,0,0" Text="+0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="Con_mod_SelectionChanged"/>
+        <TextBox x:Name="Cha_in" HorizontalAlignment="Left" Margin="53,304,0,0" Text="" VerticalAlignment="Top" Width="51" Height="30" MaxLength="2" TextChanged="int_in_TextChanged" Background="White" PlaceholderText="cha
+                 " TextAlignment="Center"/>
+        <Button x:Name="Generate_button" Content="Generate" HorizontalAlignment="Left" Margin="184,654,0,0" VerticalAlignment="Top" Background="#33FF0000" BorderThickness="1,1,1,1" IsRightTapEnabled="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </Button.BorderBrush>
         </Button>
-        <TextBlock x:Name="Dex_mod" HorizontalAlignment="Left" Margin="123,182,0,0" Text="+0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="Dex_mod_SelectionChanged"/>
-        <TextBlock HorizontalAlignment="Left" Margin="45,118,0,0" Text="Raw Scores" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="23,220,0,0" Text="con" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
-        <TextBox x:Name="Con_in" HorizontalAlignment="Left" Margin="53,215,0,0" Text="" VerticalAlignment="Top" Width="51" Height="30" MaxLength="2" TextChanged="Con_in_TextChanged" Background="White" PlaceholderText="con" TextAlignment="Center"/>
-        <TextBlock x:Name="Con_mod" HorizontalAlignment="Left" Margin="123,222,0,0" Text="+0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="Con_mod_SelectionChanged"/>
+        
+        <ComboBox x:Name="Race_Select" HorizontalAlignment="Left" Margin="208,44,0,0" VerticalAlignment="Top" Width="178"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,310,0,0" Text="cha" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_2"/>
+        <TextBlock x:Name="Cha_mod" HorizontalAlignment="Left" Margin="123,310,0,0" Text="+0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="Con_mod_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="247,19,0,0" Text="Character Race" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="Generate_Stats" Content="Generate Stat" HorizontalAlignment="Left" Margin="25,349,0,0" VerticalAlignment="Top" Height="35" FontSize="12" Width="92" Background="#33022EF5" />
+        <Button x:Name="Str_plus" Content="+1" HorizontalAlignment="Left" Margin="150,107,0,629" VerticalAlignment="Top" Height="30" FontSize="12" Background="#7F002EFF"   Foreground="#FFE3EE00" Visibility="Collapsed"/>
+        <Button x:Name="Dex_plus" Content="+1" HorizontalAlignment="Left" Margin="150,147,0,0" VerticalAlignment="Top" Height="30" FontSize="12" Background="#7F002EFF"   Foreground="#FFE3EE00" Visibility="Collapsed"/>
+        <Button x:Name="Con_plus" Content="+1" HorizontalAlignment="Left" Margin="150,187,0,0" VerticalAlignment="Top" Height="30" FontSize="12" Background="#7F002EFF"   Foreground="#FFE3EE00" Visibility="Collapsed"/>
+        <Button x:Name="Int_plus" Content="+1" HorizontalAlignment="Left" Margin="150,229,0,0" VerticalAlignment="Top" Height="30" FontSize="12" Background="#7F002EFF"   Foreground="#FFE3EE00" Visibility="Collapsed"/>
+        <Button x:Name="Wis_plus" Content="+1" HorizontalAlignment="Left" Margin="150,269,0,0" VerticalAlignment="Top" Height="30" FontSize="12" Background="#7F002EFF"   Foreground="#FFE3EE00" Visibility="Collapsed"/>
+        <Button x:Name="Cha_plus" Content="+1" HorizontalAlignment="Left" Margin="150,307,0,0" VerticalAlignment="Top" Height="30" FontSize="12" Background="#7F002EFF"   Foreground="#FFE3EE00" Visibility="Collapsed"/>
+        <TextBlock x:Name="Rand_Stat" HorizontalAlignment="Left" Margin="125,359,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="BoostInst" HorizontalAlignment="Center" Margin="205,142,47,0" Text="Half-Elf grants two skill points to be assigned by yourself. This can not rais a skill above 20" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Width="180" Visibility="Collapsed"/>
+        <ComboBox x:Name="Class_Select" HorizontalAlignment="Left" Margin="407,44,0,0" VerticalAlignment="Top" Width="178" SelectionChanged="Class_Select_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="447,21,0,0" Text="Character Class" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_3"/>
     </Grid>
 </Page>

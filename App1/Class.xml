@@ -1,0 +1,39 @@
+<?xml version="1.0"?> 
+<Classes>
+	<Barbarian>
+		<features> Rage, Unarmored Defense </features>
+		<WProfi> Simple weapons, martial weapons </WProfi>
+		<AProfi> Light Armor, Medium Armor, Shields </AProfi>
+		<Skills>
+			Animal Handling, Athletics, Intimidation, Nature, Perception, Survival
+		</Skills>
+		<SkillCount> 2 </SkillCount>
+		<Saves> Strength, Constitution </Saves>
+		<Tools> </Tools>
+		<HitDie> 1d12 </HitDie>
+		<Health> 12 </Health>
+		<Cantrips> 0 </Cantrips>
+		<Spells> 0 </Spells>
+		<L1Slots> 0 </L1Slots>
+	</Barbarian>
+	
+	<Bard>
+		<features>
+			Spellcasting, Bardic Insperation (d6)
+		</features>
+		<WProfi> Simple weapons, hand crossbows, longsword, rapiers, shortswords </WProfi>
+		<AProfi> Light Armor </AProfi>
+		<Skills> Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation
+				Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand,
+				Stealth, Survival
+		</Skills>
+		<SkillCount> 3 </SkillCount>
+		<Saves> Dexterity, Charisma </Saves>
+		<Tools> 3 Instruments </Tools>
+		<HitDie> 1d8 </HitDie>
+		<Health> 8 </Health>
+		<Cantrips> 2 </Cantrips>
+		<Spells> 4 </Spells>
+		<L1Slots> 2 </L1Slots>
+	</Bard>
+</Classes>
